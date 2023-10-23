@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Belén Tarazona">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>WebPersonal</title>
+        <link rel="stylesheet" href="./styles.css">
+
+    </head>
+    <body>
+        <header class="nav">
+            <nav>
+                <ul>
+                    <li class="logo">
+                        <img src="logo.png" alt="" >
+                    </li>
+                    <li><a href="#Galería">Galería</a></li>
+                    <li><a href="#Sobre mí">Sobre mí</a></li>
+                    <li><a href="#Consultas">Consultas</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="galeria" id="Galería" href="#Galería">
+                <div class="tp">
+
+                </div>
+                <div class="tp"></div>
+                <div class="tp"></div>
+                <div class="tp"></div>
+                <div class="tp"></div>
+                <div class="tp"></div>
+            </div>
+            <div class="containerText">
+                <div class="animatedText">ilustraciones • diseños editoriales  •  branding • diseño para redes sociales • web • </div>
+            </div>
+            <!--con animación-->
+            <section class="aboutMe" id="Sobre mí" href="#Sobre mí">
+                <article class="about">
+                    <div class="contenedor">
+                        <img class="left" src="galería/bio.png" alt="foto" width="300px">
+                        <img class="circle" src="galería/circle.png" width="300px">
+                    </div>
+                    <div class="right">
+                        <h5>Belén Tarazona</h5>
+                        <h1>// diseñadora gráfica</h1>
+                        <p>Soy una persona comprometida en dar lo mejor de mí y siempre en busca de
+                            nuevas oportunidades de aprendizaje. Me desempeño en distintos ámbitos del diseño
+                            y la ilustración. Actualmente, me estoy adentrando en la programación para enriquecer
+                            y ampliar mis conocimientos en nuevas tecnologías.</p>
+                    </div>
+                </article>
+                <!--sección consultas, falta js-->
+                <article id="Consultas">
+                    <section class="consulta"  href="#Consultas">
+                        <form action="" method="">
+                            <h2>Haceme tus consultas!</h2>
+                            <fieldset>
+                                <div class="form">
+                                    <br>
+                                    <label class="contactLabel" for="nombre">NOMBRE:</label>
+                                    <input  type="text" class="designform" id="nombre" placeholder=" Nombre" value="" required aria-required="true">
+                                    <br>
+                                    <label class="contactLabel" for="apellido">APELLIDO:</label>
+                                    <input type="text" class="designform" id="apellido" placeholder=" Apellido" required>
+                                    <br>
+                                    <label class="contactLabel" for="email">EMAIL:</label>
+                                    <input type="email" class="designform" id="email" placeholder=" Email" required>
+                                    <br>
+                                    <textarea cols='30' rows='10'placeholder="Dejame tu mensaje..." required></textarea>
+                                    <br>
+                                    <button>Enviar</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </section>
+            <section>
+
+                <article>
+                    <div class="contacto">
+                        <h2>Contacto. </h2>
+                        <ol class="redes">
+                            <div class="container">
+                                <ul class="link">
+                                    <a href="/tarazona.belen">
+                                        /tarazona.belen
+                                    </a>
+                                </ul>
+                                <ul class="link">
+                                    <a href="behance">
+                                        behance
+                                    </a>
+                                </ul>
+                            </div>
+                            <div class="container">
+                                <ul class="link">
+                                    <a href="linkedIn">
+                                        linkedIn
+                                    </a>
+                                </ul>
+                                <ul class="link">
+                                    <a href="belu3000@hotmail.com">
+                                        belu3000@hotmail.com
+                                    </a>
+                                </ul>
+                            </div>
+
+                        </ol>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>
+<!-- <div class="center">
+    <h1 id="circle">●belén tarazona             ●diseñadora gráfica</h1>
+</div>
+<script>
+    circle = document.getElementById("circle")
+    criclearray = circle.textContent.split('')
+    circle.textContent = ''
+
+    for(var i = 0; i< circlearray.length; i++){
+        circle.innerHTML += '<span> style="transform:rotate(50deg)'+ circlearra[i]+</spam>'
+
+    }
+
+</script>
