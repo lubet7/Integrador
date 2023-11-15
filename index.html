@@ -7,18 +7,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>WebPersonal</title>
         <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     </head>
     <body>
         <header class="nav">
             <nav>
-                <ul>
-                    <li class="logo">
-                        <img src="logo.png" alt="" >
-                    </li>
-                    <li><a href="#Galería">Galería</a></li>
-                    <li><a href="#Sobre mí">Sobre mí</a></li>
-                    <li><a href="#Consultas">Consultas</a></li>
+               <div class="menu" id="menu">
+                    <i class="fa-solid fa-bars" id="bars"></i>
+               </div>
+                <a href="#Galeria" class="logo">
+                    <img src="logo.png" alt="" >
+                </a>
+                <ul class="nav-bar" id="nav-bar">
+                    <li><a href="#Galería" class="select">Galería</a></li>
+                    <li><a href="#Sobre mí" >Sobre mí</a></li>
+                    <li><a href="#Consultas" >Consultas</a></li>
                 </ul>
             </nav>
         </header>
@@ -34,7 +38,16 @@
                 <div class="tp"></div>
             </div>
             <div class="containerText">
-                <div class="animatedText">ilustraciones • diseños editoriales  •  branding • diseño para redes sociales • web • </div>
+                <div class="animationText">
+                    <p>• ilustraciones • diseños editoriales •  branding </p>
+                    <p>• diseño para redes sociales  •  branding • diseño para redes sociales • diseño web  </p>
+
+                </div>
+                <div class="animationText">
+                    <p>• ilustraciones • diseños editoriales •  branding </p>
+                    <p>• diseño para redes sociales  •  branding • diseño para redes sociales • diseño web</p>
+
+                </div>
             </div>
             <!--con animación-->
             <section class="aboutMe" id="Sobre mí" href="#Sobre mí">
@@ -114,6 +127,7 @@
         </main>
         <footer>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
 <!-- <div class="center">
@@ -125,7 +139,7 @@
     circle.textContent = ''
 
     for(var i = 0; i< circlearray.length; i++){
-        circle.innerHTML += '<span> style="transform:rotate(50deg)'+ circlearra[i]+</spam>'
+        circle.in nerHTML += '<span> style="transform:rotate(50deg)'+ circlearra[i]+</spam>'
 
     }
 
