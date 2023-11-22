@@ -6,7 +6,7 @@
         <meta name="author" content="Belén Tarazona">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>WebPersonal</title>
-        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="././assents/styles/styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     </head>
@@ -17,44 +17,82 @@
                     <i class="fa-solid fa-bars" id="bars"></i>
                </div>
                 <a href="#Galeria" class="logo">
-                    <img src="logo.png" alt="" >
+                    <img src=".././assents/images/logo.png" alt="" >
                 </a>
                 <ul class="nav-bar" id="nav-bar">
                     <li><a href="#Galería" class="select">Galería</a></li>
-                    <li><a href="#Sobre mí" >Sobre mí</a></li>
-                    <li><a href="#Consultas" >Consultas</a></li>
+                    <li><a href="#Sobre mí" class="select">Sobre mí</a></li>
+                    <li><a href="#Consultas" class="select">Consultas</a></li>
+                    <li><a class="link" href="https://drive.google.com/drive/folders/1zIKWPVBLJHAFCSdUQ4BYx_v7zLnYfwg9?usp=sharing" >Portfolio</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <div class="galeria" id="Galería" href="#Galería">
                 <div class="tp">
+                    <div class="info">
+                        <h1>Proyecto Editorial (facultad)</h1>
+                        <p>Portada para el libro "La sociedad del cansancio", de la serie coleccionable "Crisis del ser humano". Diez libros que reúnen los ensayos filosóficos del momento.</p>
+                        <a href="#" class="btn">Ver más</a>
+                    </div>
 
                 </div>
-                <div class="tp"></div>
-                <div class="tp"></div>
-                <div class="tp"></div>
-                <div class="tp"></div>
-                <div class="tp"></div>
+                <div class="tp">
+                    <div class="info">
+                        <h1>Proyecto Editorial (facultad)</h1>
+                        <p>Portada para el libro "El concepto de la angustia", de la serie coleccionable "Crisis del ser humano". Diez libros que reúnen los ensayos filosóficos del momento.</p>
+                        <a href="#" class="btn">Ver más</a>
+                    </div>
+                </div>
+                <div class="tp">
+                    <div class="info">
+                        <h1>Afiche (facultad)</h1>
+                        <p>Afiche principa para el Congreso realizado por la Universidad de Medicina, acerca de la malnutrición.</p>
+                        <a href="#" class="btn">Ver más</a>
+                    </div>
+                </div>
+                <div class="tp">
+                    <div class="info">
+                        <h1>Ilustración (facultad)</h1>
+                        <p> Pieza gráfica en apoyo a la Ley de Humedales.</p>
+                        <a href="#" class="btn">Ver más</a>
+                    </div>
+                </div>
+                <div class="tp">
+                    <div class="info">
+                        <h1>Ilustración(facultad)</h1>
+                        <p> Serie de ilustraciones para microrrelato digital</p>
+                        <a href="#" class="btn">Ver más</a>
+                    </div>
+                </div>
+                <div class="tp">
+                    <div class="info">
+                        <h1>Afiche de película(facultad)</h1>
+                        <p> Afiche inspirado en el cuento de Abelardo Castillo</p>
+                        <a href="#" class="btn">Ver más</a>
+                    </div>
+                </div>
             </div>
-            <div class="containerText">
-                <div class="animationText">
-                    <p>• ilustraciones • diseños editoriales •  branding </p>
-                    <p>• diseño para redes sociales  •  branding • diseño para redes sociales • diseño web  </p>
+            <div class="text">
+                <div class="containerText">
+                    <div class="animationText">
+                        <b>• ilustraciones • diseños editoriales • branding diseño para redes sociales • branding • diseño para redes sociales • diseño web </b>
+                        <b>• ilustraciones • diseños editoriales • branding diseño para redes sociales • branding • diseño para redes sociales • diseño web </b>
 
-                </div>
-                <div class="animationText">
-                    <p>• ilustraciones • diseños editoriales •  branding </p>
-                    <p>• diseño para redes sociales  •  branding • diseño para redes sociales • diseño web</p>
+                    </div>
+                    <div class="animationText">
+                        <b>• ilustraciones • diseños editoriales • branding diseño para redes sociales • branding • diseño para redes sociales • diseño web </b>
+                        <b>• ilustraciones • diseños editoriales • branding diseño para redes sociales • branding • diseño para redes sociales • diseño web </b>
 
+                    </div>
                 </div>
             </div>
             <!--con animación-->
             <section class="aboutMe" id="Sobre mí" href="#Sobre mí">
                 <article class="about">
                     <div class="contenedor">
-                        <img class="left" src="galería/bio.png" alt="foto" width="300px">
-                        <img class="circle" src="galería/circle.png" width="300px">
+                        <img class="left" src=".././assents/images/bio.png" alt="foto" width="300px">
+                        <img class="circle" src=".././assents/images/circle.png" width="300px">
                     </div>
                     <div class="right">
                         <h5>Belén Tarazona</h5>
@@ -82,12 +120,15 @@
                                     <label class="contactLabel" for="email">EMAIL:</label>
                                     <input type="email" class="designform" id="email" placeholder=" Email" required>
                                     <br>
-                                    <textarea cols='30' rows='10'placeholder="Dejame tu mensaje..." required></textarea>
+                                    <textarea id="mensaje" cols='30' rows='10'placeholder="Dejame tu mensaje..." required></textarea>
                                     <br>
-                                    <button>Enviar</button>
+                                    <button type="reset" onclick="borrar()" value="borrar">Borrar</button>
+                                    <button type="button" id="btn-enviar" value="enviar">Enviar</button>
                                 </div>
                             </fieldset>
                         </form>
+                        <br>
+                        <div id="escribir"></div>
                     </section>
             <section>
 
@@ -97,25 +138,25 @@
                         <ol class="redes">
                             <div class="container">
                                 <ul class="link">
-                                    <a href="/tarazona.belen">
-                                        /tarazona.belen
+                                    <a href="https://www.instagram.com/tarazona.belen/">
+                                        instagram
                                     </a>
                                 </ul>
                                 <ul class="link">
-                                    <a href="behance">
+                                    <a href="https://www.behance.net/belu3000b280?tracking_source=search_projects_recommended%7Ctarazona">
                                         behance
                                     </a>
                                 </ul>
                             </div>
                             <div class="container">
                                 <ul class="link">
-                                    <a href="linkedIn">
+                                    <a href="https://www.linkedin.com/in/lucero-bel%C3%A9n-tarazona-lagos">
                                         linkedIn
                                     </a>
                                 </ul>
                                 <ul class="link">
                                     <a href="belu3000@hotmail.com">
-                                        belu3000@hotmail.com
+                                        email
                                     </a>
                                 </ul>
                             </div>
@@ -126,21 +167,8 @@
             </section>
         </main>
         <footer>
+
         </footer>
         <script src="script.js"></script>
     </body>
 </html>
-<!-- <div class="center">
-    <h1 id="circle">●belén tarazona             ●diseñadora gráfica</h1>
-</div>
-<script>
-    circle = document.getElementById("circle")
-    criclearray = circle.textContent.split('')
-    circle.textContent = ''
-
-    for(var i = 0; i< circlearray.length; i++){
-        circle.in nerHTML += '<span> style="transform:rotate(50deg)'+ circlearra[i]+</spam>'
-
-    }
-
-</script>
